@@ -1,6 +1,9 @@
 import styles from "./Bmi.module.css";
 
+import { useNavigate } from "react-router-dom";
+
 const Bmi = () => {
+  const navigateTo = useNavigate();
   return (
     <div className="container col-xxl-8 px-4 py-5">
       <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -32,6 +35,9 @@ const Bmi = () => {
             <button
               type="button"
               className="btn btn-primary btn-lg px-4 me-md-2"
+              onClick={() => {
+                navigateTo("/bmi");
+              }}
             >
               Calculate BMI
             </button>

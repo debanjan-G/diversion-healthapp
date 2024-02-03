@@ -59,6 +59,7 @@ hr {
 
 
 .btn {
+    width: 25%;
     font-size: 1.20rem;
     margin: 10px auto;
     font-family: Roboto, sans-serif;
@@ -68,19 +69,10 @@ hr {
     padding: 10px 30px;
     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
     border-radius: 30px;
-    transition: 1000ms;
-    transform: translateY(0);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
+    text-align: center;
+    opacity: 0.9;
 }
 
 .btn:hover {
-
-    transition: 1000ms;
-    padding: 10px 50px;
-    transform: translateY(-0px);
-    background: linear-gradient(90deg, #3559e0 0%, #ff2e63 100%);
-    color: #ffffff;
+    opacity: 1;
 }
