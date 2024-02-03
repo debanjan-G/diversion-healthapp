@@ -59,6 +59,7 @@ hr {
 
 
 .btn {
+    width: 25%;
     font-size: 1.20rem;
     margin: 10px auto;
     font-family: Roboto, sans-serif;
@@ -70,14 +71,10 @@ hr {
     border-radius: 30px;
     transition: 1000ms;
     transform: translateY(0);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
+    text-align: center;
 }
 
 .btn:hover {
-
     transition: 1000ms;
     padding: 10px 50px;
     transform: translateY(-0px);

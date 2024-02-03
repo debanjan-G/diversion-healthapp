@@ -13,6 +13,7 @@ const Quiz = () => {
     setQuesNo((prev) => prev + 1);
   };
 
+  
   return quesNo < quizData.length ? (
     <div className={styles.quizContainer}>
       <h1 className={styles.header}>Mental Health Quiz</h1>

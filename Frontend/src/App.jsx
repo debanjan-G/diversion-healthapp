@@ -6,9 +6,10 @@ import QuizHome from "./Components/Quiz App/QuizHome/QuizHome";
 import About from "./Components/Layout/About Page/About";
 import Contact from "./Components/Layout/Contact Us Page/Contact";
 import InvalidRoute from "./Components/Invalid Route/InvalidRoute";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Quiz from "./Components/Quiz App/Quiz/Quiz";
+import BmiForm from "./Components/BMI App/Bmi Form/BmiForm";
+import Footer from "./Components/Layout/Footer/Footer";
 
 function App() {
   return (
@@ -17,13 +18,15 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/bmi" element={<Bmi />} />
+          <Route path="/bmi-home" element={<Bmi />} />
+          <Route path="/bmi" element={<BmiForm />} />
           <Route path="/quiz-home" element={<QuizHome />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<InvalidRoute />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
