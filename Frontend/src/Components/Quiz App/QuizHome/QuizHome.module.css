@@ -1,0 +1,10 @@
+.container {
+    width: 75%;
+    margin: 25px auto;
+}
+
+.quizHeroImage {
+    /* object-fit: cover; */
+    /* width: 30rem; */
+    border-radius: 100%;
+}
