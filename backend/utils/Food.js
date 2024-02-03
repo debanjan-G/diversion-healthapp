@@ -55,25 +55,25 @@ export const BMI_FEEDBACK = [
         id: 7,
         name: "Pumpkin Seeds",
         description: "Nutrient-rich seeds with magnesium and zinc.",
-        img: "https://www.thespruceeats.com/thmb/zc3BpJ4ADLZapUPZD8C1ny3l7_0=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/pumpkin-seeds-close-up-92311204-58f7f73c3df78ca15968d9b6.jpg",
+        img: "https://health.wordpress.clevelandclinic.org/wp-content/uploads/sites/3/2020/11/eatPumpkinSeeds-1310047583_770x533.jpg",
       },
       {
         id: 8,
         name: "Cauliflower",
         description: "Versatile vegetable with vitamins and fiber.",
-        img: "https://www.thespruceeats.com/thmb/Nml-b4ZrOF0yLz8qHWDS1_QJ2jo=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1149300048-5c853afbc9e77c0001fd1a67.jpg",
+        img: "https://m.media-amazon.com/images/I/91EdPVzD99L._AC_UF1000,1000_QL80_.jpg",
       },
       {
         id: 9,
         name: "Mango",
         description: "Sweet fruit providing vitamins and antioxidants.",
-        img: "https://www.thespruceeats.com/thmb/YT97c1e3nchc6QAlNrBfHrJ8hfs=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/mango-igp-getty-5bb635de4cedfd00256ab6f1.jpg",
+        img: "https://kadiyamnursery.com/cdn/shop/products/alphonso-mango-plant-ratnagiri-grafted-1-healthy-live-plant-kadiyam-nursery-1_700x700.jpg?v=1662731270",
       },
       {
         id: 10,
         name: "Eggs",
         description: "Protein-packed option with essential nutrients.",
-        img: "https://www.thespruceeats.com/thmb/xGOD4blywHqKg6SOddB5ZHKF3EY=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/are-eggs-dairy-4684029-02-d2b2ed0e87f041e895e816afb7bb1e1f.jpg",
+        img: "https://theheirloompantry.co/wp-content/uploads/2022/06/how-to-fry-eggs-perfectly-in-4-ways-the-heirloom-pantry.jpg",
       },
     ],
   },
@@ -89,32 +89,32 @@ export const BMI_FEEDBACK = [
         name: "Quinoa Salad",
         description:
           "A refreshing salad with quinoa, veggies, and a light dressing.",
-        img: "https://www.thespruceeats.com/thmb/u7H6Ez2b8s_Yc3Mp7VTc_Wj43HE=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/quinoa-salad-5c870f6346e0fb0001f520cc.jpg",
+        img: "https://www.inspiredtaste.net/wp-content/uploads/2023/01/Quinoa-Salad-Recipe-Video.jpg",
       },
       {
         id: 12,
         name: "Lean Turkey",
         description: "Protein-rich turkey for muscle support.",
-        img: "https://www.thespruceeats.com/thmb/8YOiU4Fcig9a-0RHWe9CsqwZw1g=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-635757337-5a91de8f119fa800368bce2b.jpg",
+        img: "https://www.tastingtable.com/img/gallery/15-tips-you-need-when-cooking-with-ground-turkey/l-intro-1670357078.jpg",
       },
       {
         id: 13,
         name: "Kale Smoothie",
         description: "A nutritious smoothie with kale, fruits, and yogurt.",
-        img: "https://www.thespruceeats.com/thmb/RW4NUDkO1wCAqVKjLXQpQ_57QNU=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/kale-smoothie-recipe-5c0e2cbe4cedfd00018e6a8a.jpg",
+        img: "https://www.acouplecooks.com/wp-content/uploads/2020/06/Kale-Smoothie-009.jpg",
       },
       {
         id: 14,
         name: "Blueberries",
         description: "Antioxidant-rich berries for added health benefits.",
-        img: "https://www.thespruceeats.com/thmb/VzI8NapVCGV1RbKFHtw__4Bl2Jo=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/blueberries-5c870bbf46e0fb000156cc1e.jpg",
+        img: "https://m.media-amazon.com/images/I/51jk5Ao6NIL._AC_UF1000,1000_QL80_.jpg",
       },
       {
         id: 15,
         name: "Chickpea Salad",
         description:
           "A protein and fiber-packed salad with chickpeas and veggies.",
-        img: "https://www.thespruceeats.com/thmb/uR3JTbQq_6p5_YbV-aa91qAzCIo=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/chickpea-salad-recipe-5c770ed146e0fb0001fc9c0a.jpg",
+        img: "https://img.taste.com.au/b9oAt3fl/taste/2021/12/mediterranean-chickpea-salad-175726-1.jpg",
       },
     ],
   },
@@ -136,14 +136,14 @@ export const BMI_FEEDBACK = [
         name: "Sweet Potato",
         description:
           "A nutrient-dense, low-calorie option with vitamins and fiber.",
-        img: "https://cdn.loveandlemons.com/wp-content/uploads/2019/08/baked-sweet-potato-recipe-1-480x270.jpg",
+        img: "https://c.ndtvimg.com/2018-10/rn4qsd9_sweet-potatoes-_625x300_10_October_18.jpg",
       },
       {
         id: 18,
         name: "Mixed Bean Salad",
         description:
           "A mix of beans, veggies, and a light vinaigrette for fiber and protein.",
-        img: "https://greenbowl2soul.com/wp-content/uploads/2019/06/Mixed-bean-salad.jpg",
+        img: "https://www.inspiredtaste.net/wp-content/uploads/2023/01/Easy-Bean-Salad-Recipe-Video.jpg",
       },
       {
         id: 19,
@@ -179,7 +179,7 @@ export const BMI_FEEDBACK = [
         name: "Spinach Salad with Grilled Chicken",
         description:
           "Leafy greens, grilled chicken, and a light dressing for a satisfying meal.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKR4wENWgNfNFFyUmvDt21UMUJQ3AbF43OEulrPuXMyK-Y-VN7f-XUPGd6yJvCZrfVogA&usqp=CAU",
+        img: "https://www.recipegirl.com/wp-content/uploads/2007/03/Grilled-Chicken-and-Spinach-Salad-7.jpeg",
       },
       {
         id: 23,
@@ -200,7 +200,7 @@ export const BMI_FEEDBACK = [
         name: "Grilled Turkey Burger with Avocado",
         description:
           "A lean turkey burger topped with avocado for a satisfying and nutritious option.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjo1UtTgjiz9pLGAWg4oFXZy9WGWO-ct9Rk6uGyy7dKx_Cbi1JX_JJj6CShHMhGIgwkBE&usqp=CAU",
+        img: "https://market.meridianfarmmarket.ca/wp-content/uploads/2016/07/Turkey-Burger-with-Avocado.jpg",
       },
     ],
   },

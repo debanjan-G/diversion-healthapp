@@ -1,20 +1,22 @@
 // foodRecommendation.js
 
 import express from "express";
-import { BMI_FEEDBACK } from "../Foods.js";
+import { BMI_FEEDBACK } from "../utils/Food.js";
 const router = express.Router();
 
 // BMI calculation and food recommendation logic
 const getFoodRecommendations = (bmi) => {
   // Implement food recommendation logic
-  if (bmi < 18.5) {
-    return BMI_FEEDBACK.find((bmi) => bmi.category === "rangeA");
+  if (bmi < 16.0) {
+    return BMI_FEEDBACK.find((bmi) => bmi.category === "Severely Underweight");
+  } else if (bmi >= 16.0 && bmi < 18.4) {
+    return BMI_FEEDBACK.find(
+      (bmi) => bmi.category === "Moderately Underweight"
+    );
   } else if (bmi >= 18.5 && bmi < 24.9) {
-    return BMI_FEEDBACK.find((bmi) => bmi.category === "rangeB");
-  } else if (bmi >= 25 && bmi < 29.9) {
-    return BMI_FEEDBACK.find((bmi) => bmi.category === "rangeC");
-  } else if (bmi >= 25 && bmi < 29.9) {
-    return BMI_FEEDBACK.find((bmi) => bmi.category === "Underweight");
+    return BMI_FEEDBACK.find((bmi) => bmi.category === "Healthy Weight");
+  } else if (bmi >= 25.0 && bmi < 29.9) {
+    return BMI_FEEDBACK.find((bmi) => bmi.category === "Overweight");
   } else {
     return BMI_FEEDBACK.find((bmi) => bmi.category === "Obese");
   }
