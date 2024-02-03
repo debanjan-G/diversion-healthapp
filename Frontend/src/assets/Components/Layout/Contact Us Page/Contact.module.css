@@ -1,0 +1,25 @@
+.container {
+    width: 50%;
+    margin: auto;
+
+}
+
+.btn {
+    font-size: 3.25rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 8rem;
+    border: none;
+    color: white;
+    opacity: .85;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.btnContainer {
+    margin: 20px auto;
+    text-align: center;
+}
