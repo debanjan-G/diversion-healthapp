@@ -18,7 +18,7 @@ const NewAbout = () => {
                 />
               </div>
               <div className="team-content">
-                <h3 className="name">Michele Miller</h3>
+                <h3 className="name">Samanyu Roy</h3>
                 <h4 className="title">Web Developer</h4>
               </div>
               <ul className="social">
@@ -55,7 +55,7 @@ const NewAbout = () => {
                 />
               </div>
               <div className="team-content">
-                <h3 className="name">Patricia Knott</h3>
+                <h3 className="name">Prithiwis Das</h3>
                 <h4 className="title">Web Developer</h4>
               </div>
               <ul className="social">
@@ -92,7 +92,7 @@ const NewAbout = () => {
                 />
               </div>
               <div className="team-content">
-                <h3 className="name">Justin Ramos</h3>
+                <h3 className="name">Debanjan Ghosal</h3>
                 <h4 className="title">Web Developer</h4>
               </div>
               <ul className="social">
@@ -129,7 +129,7 @@ const NewAbout = () => {
                 />
               </div>
               <div className="team-content">
-                <h3 className="name">Mary Huntley</h3>
+                <h3 className="name">Ayan Maity</h3>
                 <h4 className="title">Web Developer</h4>
               </div>
               <ul className="social">
