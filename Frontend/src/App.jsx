@@ -1,24 +1,27 @@
 import "./App.css";
-import Bmi from "./assets/Components/BMI App/Bmi";
-import LandingPage from "./assets/Components/Landing Page/LandingPage";
-import About from "./assets/Components/Layout/About Page/About";
-import Contact from "./assets/Components/Layout/Contact Us Page/Contact";
-import NavBar from "./assets/Components/NavBar/NavBar";
-import QuizHome from "./assets/Components/Quiz App/QuizHome";
+
+import NavBar from "./Components/NavBar/NavBar";
+import LandingPage from "./Components/Landing Page/LandingPage";
+import Bmi from "./Components/BMI App/Bmi";
+import QuizHome from "./Components/Quiz App/QuizHome";
+import About from "./Components/Layout/About Page/About";
+import Contact from "./Components/Layout/Contact Us Page/Contact";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <LandingPage />
-      <hr />
-      <Bmi />
-      <hr />
-      <QuizHome />
-      <hr />
-      <About />
-      <hr />
-      <Contact />
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/bmi" element={<Bmi />} />
+          <Route path="/quiz" element={<QuizHome />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </>
   );
 }

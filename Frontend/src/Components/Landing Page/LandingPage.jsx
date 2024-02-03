@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./LandingPage.module.css";
 
 const LandingPage = () => {
+  const navigateTo = useNavigate();
   return (
     <div
       className={`row flex-lg-row-reverse align-items-center g-5 py-5 ${styles.container}`}
@@ -18,23 +20,35 @@ const LandingPage = () => {
       </div>
       <div className="col-lg-6">
         <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-          Responsive left-aligned hero with image
+          Nurturing Your Mind and Body
         </h1>
         <p className="lead">
-          Quickly design and customize responsive mobile-first sites with
-          Bootstrap, the world’s most popular front-end open source toolkit,
-          featuring Sass variables and mixins, responsive grid system, extensive
-          prebuilt components, and powerful JavaScript plugins.
+          Embark on a well-being journey with MindScale, where we seamlessly
+          integrate physical and mental health support. Our platform offers
+          personalized food recommendations, health tips, and individualized
+          mental-health feedback. It's your all-in-one solution for a balanced
+          and healthier life. Join us in this transformative experience,
+          unlocking your full potential and embracing vitality. Your well-being,
+          reimagined.
         </p>
         <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">
-            Primary
+          <button
+            type="button"
+            onClick={() => {
+              navigateTo("/bmi");
+            }}
+            className="btn btn-primary btn-lg px-4 me-md-2"
+          >
+            Check BMI
           </button>
           <button
             type="button"
             className="btn btn-outline-secondary btn-lg px-4"
+            onClick={() => {
+              navigateTo("/quiz");
+            }}
           >
-            Default
+            Take Mental Health Quiz
           </button>
         </div>
       </div>
