@@ -23,7 +23,6 @@ const BmiForm = () => {
   return (
     <form className={styles.formContainer} onSubmit={handleSubmit}>
       <h1 style={{ textAlign: "center" }}>Check Your BMI</h1>
-
       <div className={styles.genderContainer}>
         <div className="male">
           <img
@@ -31,6 +30,7 @@ const BmiForm = () => {
             src="https://www.svgrepo.com/show/382101/male-avatar-boy-face-man-user.svg"
             alt=""
           />
+          <br />
           <input type="radio" name="gender" ref={maleRef} />
         </div>
         <div className="female">
@@ -39,6 +39,7 @@ const BmiForm = () => {
             src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-female-5-512.png"
             alt=""
           />
+          <br />
           <input type="radio" name="gender" ref={femaleRef} />
         </div>
       </div>
@@ -53,20 +54,16 @@ const BmiForm = () => {
         />
       </div>
       <div className="mb-3">
-        <div className="col-auto">
-          <label className="col-form-label">Height</label>
-        </div>
-        <div className="col-auto">
-          <input
-            ref={heightRef}
-            type="number"
-            step="0.1"
-            id="inputPassword6"
-            className="form-control"
-            aria-describedby="passwordHelpInline"
-            placeholder="eg: 5.11 ft"
-          />
-        </div>
+        <label className="form-label">Height</label>
+        <input
+          ref={heightRef}
+          type="number"
+          step="0.1"
+          id="inputPassword6"
+          className="form-control"
+          aria-describedby="passwordHelpInline"
+          placeholder="eg: 5.11 ft"
+        />
       </div>
       <div className="mb-3">
         <label className="form-label">Weight</label>
@@ -78,10 +75,9 @@ const BmiForm = () => {
           placeholder="kg"
         />
       </div>
-
-      <button type="submit" className="btn btn-primary">
-        Submit
-      </button>
+      <div className={styles.btnContainer}>
+        <button className={styles.btn}>Submit</button>
+      </div>
     </form>
   );
 };

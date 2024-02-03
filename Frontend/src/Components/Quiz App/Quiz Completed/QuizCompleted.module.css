@@ -31,7 +31,6 @@
 }
 
 .btn:hover {
-
     transition: 1000ms;
     padding: 10px 50px;
     transform: translateY(-0px);
