@@ -1,0 +1,61 @@
+.formContainer {
+    background-color: #252A34;
+    color: #FF2E63;
+    margin: auto;
+    max-width: 35%;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+label {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+input::placeholder {
+    text-align: right;
+}
+
+.genderContainer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.genderImg {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin: 25px;
+}
+
+.btnContainer {
+    text-align: center;
+}
+
+.submitBtn {
+    width: 25%;
+    margin: 10px auto;
+}
+
+
+.btn {
+    width: 25%;
+    font-size: 1.20rem;
+    margin: 10px auto;
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    color: #fff;
+    background: linear-gradient(90deg, #3559e0 0%, #ff2e63 100%);
+    padding: 10px 30px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 30px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
