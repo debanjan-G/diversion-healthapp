@@ -23,11 +23,12 @@ const Contact = () => {
         <label className="form-label">Phone Number</label>
         <input
           type="number"
+          inputMode="numeric"
+          pattern="[0-9]*"
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="Enter your mobile phone no."
           required
-          readOnly
         />
       </div>
       <div className="mb-3">
