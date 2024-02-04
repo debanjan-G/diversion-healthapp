@@ -9,8 +9,10 @@ const Quiz = () => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleNextClick = () => {
-    setSelectedOption(null);
-    setQuesNo((prev) => prev + 1);
+    if (selectedOption !== null) {
+      setSelectedOption(null);
+      setQuesNo((prev) => prev + 1);
+    }
   };
 
   return quesNo < quizData.length ? (

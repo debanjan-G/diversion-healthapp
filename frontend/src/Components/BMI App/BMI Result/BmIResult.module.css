@@ -1,0 +1,33 @@
+.container {
+    width: 75%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feedbackHeader {
+    margin: 25px;
+}
+
+#intro {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+#outro {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.foodImage {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ... (rest of your styles) */

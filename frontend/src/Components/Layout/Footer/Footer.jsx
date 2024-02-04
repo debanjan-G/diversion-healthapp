@@ -1,6 +1,8 @@
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div className="container">
+    <div className="contaicurrentYearner">
       <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div className="col-md-4 d-flex align-items-center">
           <a
@@ -12,7 +14,7 @@ const Footer = () => {
             </svg>
           </a>
           <span className="mb-3 mb-md-0 text-body-secondary">
-            © 2023 Company, Inc
+            © {currentYear} Company, Inc
           </span>
         </div>
 

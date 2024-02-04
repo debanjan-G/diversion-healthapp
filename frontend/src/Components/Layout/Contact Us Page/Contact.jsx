@@ -39,14 +39,13 @@ const Contact = () => {
 
   return (
     <form className={styles.container} onSubmit={handleSubmit}>
-      <h1>Get In Touch</h1>
+      <h1 style={{ textAlign: "center" }}>Get In Touch</h1>
       <div className="mb-3">
         <label className="form-label">Name</label>
         <input
           type="text"
           className="form-control"
           id="exampleFormControlInput1"
-          placeholder="Enter your name"
           name="name"
           value={formData.name}
           onChange={handleInputChange}
@@ -61,7 +60,6 @@ const Contact = () => {
           pattern="[0-9]*"
           className="form-control"
           id="exampleFormControlInput1"
-          placeholder="Enter your mobile phone no."
           name="phoneNumber"
           value={formData.phoneNumber}
           onChange={handleInputChange}
@@ -74,7 +72,6 @@ const Contact = () => {
           type="email"
           className="form-control"
           id="exampleFormControlInput1"
-          placeholder="name@example.com"
           name="email"
           value={formData.email}
           onChange={handleInputChange}
