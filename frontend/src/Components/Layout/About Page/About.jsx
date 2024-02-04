@@ -74,7 +74,7 @@ const NewAbout = () => {
                 </li>
                 <li>
                   <a
-                    href="www.linkedin.com/in/prithiwis-das-837a90285"
+                    href="https://www.linkedin.com/in/prithiwis-das-837a90285/"
                     className="fa fa-twitter"
                   >
                     <FaLinkedin />
