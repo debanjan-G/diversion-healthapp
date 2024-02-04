@@ -7,6 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/feedback": "http://localhost:5000",
+      "/api": "http://localhost:5000",
     },
   },
 });

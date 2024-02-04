@@ -25,6 +25,7 @@ const getFoodRecommendations = (bmi) => {
 // Endpoint for BMI calculation and food recommendations
 router.post("/calculate-bmi", (req, res) => {
   const { height, weight } = req.body;
+  console.log(height, weight);
 
   if (!height || !weight) {
     return res
@@ -35,12 +36,6 @@ router.post("/calculate-bmi", (req, res) => {
   const heightInMeters = height * 0.3048;
   const bmi = (weight / heightInMeters ** 2).toFixed(2);
   const foodRecommendations = getFoodRecommendations(bmi);
-
-  // console.log(
-  //   `BMI = ${bmi}, Food recommendations = ${JSON.stringify(
-  //     foodRecommendations
-  //   )}`
-  // );
 
   res.json({ bmi, foodRecommendations });
 });
