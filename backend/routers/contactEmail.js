@@ -5,7 +5,7 @@ const currentDate = new Date();
 const day = currentDate.getDate();
 const month = currentDate.getMonth();
 const year = currentDate.getFullYear();
-const hours = currentDate.getHours();
+const hours = new Date().getHours();
 const minutes = currentDate.getMinutes();
 
 const formattedDate = `${day} ${month} ${year}`;
