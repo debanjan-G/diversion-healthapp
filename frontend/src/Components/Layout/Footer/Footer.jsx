@@ -14,7 +14,7 @@ const Footer = () => {
             </svg>
           </a>
           <span className="mb-3 mb-md-0 text-body-secondary">
-            © {currentYear} Company, Inc
+            © {currentYear} MindScale
           </span>
         </div>
 

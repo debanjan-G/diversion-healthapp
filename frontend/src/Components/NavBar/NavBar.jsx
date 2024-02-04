@@ -11,7 +11,9 @@ const NavBar = () => {
           <svg className="bi me-2" width="40" height="32">
             <use xlinkHref="#bootstrap"></use>
           </svg>
-          <span className="fs-4">MindScale</span>
+          <span className="fs-4">
+            <p style={{ fontSize: "2.25rem", margin: "0" }}> MindScale</p>
+          </span>
         </a>
 
         <ul className="nav nav-pills">
