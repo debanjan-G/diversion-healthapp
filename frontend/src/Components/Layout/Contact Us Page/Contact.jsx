@@ -1,9 +1,40 @@
 import styles from "./Contact.module.css";
+import React, { useState } from "react";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+    query: "",
+  });
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Submitting form");
+    console.log("Form Data frontend:", formData);
+    try {
+      const response = await fetch("http://localhost:5000/contact/sendmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        console.log("Form data sent successfully");
+      } else {
+        console.error("Failed to send form data");
+      }
+    } catch (error) {
+      console.error("Error sending form data:", error);
+    }
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
   return (
@@ -16,6 +47,9 @@ const Contact = () => {
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="Enter your name"
+          name="name"
+          value={formData.name}
+          onChange={handleInputChange}
           required
         />
       </div>
@@ -28,6 +62,9 @@ const Contact = () => {
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="Enter your mobile phone no."
+          name="phoneNumber"
+          value={formData.phoneNumber}
+          onChange={handleInputChange}
           required
         />
       </div>
@@ -38,6 +75,9 @@ const Contact = () => {
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="name@example.com"
+          name="email"
+          value={formData.email}
+          onChange={handleInputChange}
           required
         />
       </div>
@@ -48,9 +88,11 @@ const Contact = () => {
           id="exampleFormControlTextarea1"
           rows="5"
           placeholder="You can ask anything"
+          name="query"
+          value={formData.query}
+          onChange={handleInputChange}
           style={{ resize: "none" }}
-          required
-        ></textarea>
+          required></textarea>
       </div>
       <div className={styles.btnContainer}>
         <button type="submit" className={`btn btn-success ${styles.btn}`}>
@@ -60,5 +102,4 @@ const Contact = () => {
     </form>
   );
 };
-
 export default Contact;
