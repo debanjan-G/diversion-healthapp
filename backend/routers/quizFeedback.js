@@ -27,5 +27,11 @@ router.post("/getFeedback", (req, res) => {
   const feedback = getFeedback(score);
   res.json(feedback);
 });
+router.get("/bmi", (req, res) => {
+  const score = req.body.score
+  console.log(score)
+  const feedback = getFeedback(score)
+  res.json(feedback)
+})
 
 export default router;
