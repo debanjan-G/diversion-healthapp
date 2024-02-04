@@ -1,0 +1,14 @@
+.container {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 20rem;
+}
+
+.msg {
+  font-size: 1.5rem;
+}
