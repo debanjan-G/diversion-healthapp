@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/feedback": "http://localhost:5000",
-      "/api": "http://localhost:5000",
+      "/feedback": "https://mindscale.onrender.com/",
+      "/api": "https://mindscale.onrender.com/",
     },
   },
 });
