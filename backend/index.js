@@ -3,6 +3,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import foodRecommendationRouter from "./routers/FoodRecommendationRouter.js";
 import quizFeedback from "./routers/quizFeedback.js";
+import contactEmail from "./routers/contactEmail.js"
 
 
 const app = express();
@@ -14,6 +15,7 @@ app.use(cors());
 // Use the foodRecommendation router for the /api path
 app.use("/api", foodRecommendationRouter);
 app.use("/feedback", quizFeedback);
+app.use("/contact", contactEmail);
 
 
 app.get("/", (req, res) => {
