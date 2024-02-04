@@ -12,7 +12,7 @@ const NavBar = () => {
             <use xlinkHref="#bootstrap"></use>
           </svg>
           <span className="fs-4">
-            <p style={{ fontSize: "2.25rem", margin: "0" }}> MindScale</p>
+            <p style={{ fontSize: "2.25rem", margin: "0" }}>MindScale</p>
           </span>
         </a>
 
